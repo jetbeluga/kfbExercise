@@ -16,7 +16,7 @@ export enum Locale {
 }
 
 export type TranslationDefinition = {
-  [key in Locale]: Record<string, string>;
+  [key in Locale]: Record<string, object | string>;
 };
 
 export interface ComponentTranslationBundle {
@@ -77,7 +77,6 @@ export class Localization {
         ] = 1;
       },
     );
-
     this.i18n = i18next.createInstance({
       initImmediate: false,
       lng: defaultLocale,
@@ -110,7 +109,6 @@ export class Localization {
     defaultValue: string | undefined = undefined,
   ): string => {
     const translation = ref(this.get(key, namespace, defaultValue, options));
-
     this.addRef(translation, namespace, key, defaultValue, options);
 
     return translation.value;
@@ -176,7 +174,6 @@ export class Localization {
       // no namespace
       tKey = key;
     }
-
     return this.i18n.t(tKey, defaultValue, options);
   }
 

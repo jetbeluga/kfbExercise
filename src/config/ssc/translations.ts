@@ -6,8 +6,12 @@ import {
 const translations: TranslationDefinition = {
   [Locale.En]: {
     applicationName: 'Seascanner',
+    homePage: { selectedTravelDate: 'selected travel date' },
   },
-  [Locale.De]: {},
+  [Locale.De]: {
+    applicationName: 'Seascanner',
+    homePage: { selectedTravelDate: 'ausgewähltes Reisedatum' },
+  },
 };
 
 export const SscTranslations = translations;

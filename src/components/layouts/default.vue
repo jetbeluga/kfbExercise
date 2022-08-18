@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="MainComponent">
     <nuxt />
   </div>
 </template>
@@ -12,3 +12,10 @@ import { Component, Vue } from 'nuxt-property-decorator';
 })
 export default class DefaultLayout extends Vue {}
 </script>
+<style>
+.MainComponent {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
+</style>
