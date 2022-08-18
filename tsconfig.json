@@ -1,0 +1,36 @@
+{
+  "exclude": [
+    "node_modules",
+    "vendor"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+
+    "types": [
+      "@nuxt/types",
+      "@types/jest"
+    ],
+
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+
+    "newLine": "lf",
+
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "preserve"
+  }
+}

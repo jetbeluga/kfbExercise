@@ -1,0 +1,7 @@
+/.git/
+/.idea/
+/.nuxt/
+/.yarn/
+/dist/
+/node_modules/
+/vendor/
